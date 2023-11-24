@@ -545,6 +545,18 @@ footer{
 		left:0px;
 	}
 	
+	.work{
+		height:100px;
+	}
+	
+	.purple{
+		height:100px;
+	}
+	
+	.work-name{
+		margin:0px 0px 5px 10px;
+	}
+	
 	.work-name h3{
 		font-size:20px;
 	}
