@@ -288,20 +288,52 @@ header:hover{
 .content-wrapper{
 	width:90%;
 	max-width:1000px;
-	margin:70px auto 0 auto;
+	margin:0px auto 0 auto;
 }
 .h{
-	font-size:48px;
-	padding-top:30px;
+	text-align: center;
+	color:#fff;
+	font-size:42px;
+	font-family:Futura PT;
+	font-weight: 900;
+	margin:70px 0px 10px 0px;
+	background-color:#C596EE;
+	padding:30px;
+}
+
+.bread{
+	display:flex;
+	pointer-events:none;
+	font-size:18px;
+}
+
+.bread-txt{
+	color:#8086FB;
+	text-decoration:underline;
+	pointer-events:all;
+	cursor:pointer;
+}
+
+.slash{
+	margin:0px 5px 0px 5px;
+	transform:translateY(-1px);
+}
+
+.bread-jp{
+	font-family:'Zen Kaku Gothic New';
+	font-weight:700;
+	font-size:17px;
+	transform:translateY(-1px);
 }
 
 .works{
 	margin-top:30px;
+	
 }
 
 .work{
 	height:150px;
-	width:90%;
+	width:100%;
 	max-width:1000px;
 	display:flex;
 	align-items:flex-end;
@@ -318,7 +350,7 @@ header:hover{
 .work-name-wrapper{
 	position:relative;
 	width:100%;
-	max-width:800px;
+	max-width:1000px;
 	
 }
 
@@ -341,6 +373,25 @@ header:hover{
 	font-size:16px;
 	margin-left:2px;
 }
+.status{
+	display:inline-block;
+	transition:all 0.2s;
+	margin-bottom:2px;
+}
+
+.released{
+	color:#fff;
+	padding:5px 7px 3px 5px;
+	background-color:#C596EE;
+}
+
+.study{
+	color:#C596EE;
+	background-color:#fff;
+	padding:3px 5px 1px 3px;
+	border:2px solid #C596EE;
+}
+
 
 .purple{
 	background:linear-gradient(135deg,#FFF 50%,#C596EE 50%);
@@ -365,21 +416,23 @@ header:hover{
 	background-position:right;
 }
 
+.released-inv{
+	color:#C596EE;
+	background-color:#fff;
+	transition:all 0.2s;
+}
+
+.study-inv{
+	color:#FFF;
+	background-color:#C596EE;;
+	padding:3px 5px 1px 3px;
+	border:2px solid #fff;
+	transition:all 0.2s;
+}
+
 .content-heading{
-	font-size:40px;
 	text-align: left;
-	margin-top:90px;
-	width:175px;
-}
-
-.arrow{
-	display:inline-block;
-	transition:all 0.2s;
-}
-
-.back:hover .arrow{
-	transform: translateX(-5px);
-	transition:all 0.2s;
+	margin:0px auto 10px auto;
 }
 
 .rhombus-icon{
@@ -390,26 +443,19 @@ header:hover{
 	margin:5px;
 }
 
-
-.sub-heading{
-	display: flex;
-	align-items:center;
-	margin-top:10px;
-}
-
-
 .content-name{
-	text-align: left;
-	font-size:24px;
-	font-family:'Zen Kaku Gothic New';
+	text-align: center;
+	color:#fff;
+	font-size:30px;
+	font-family: 'Zen Kaku Gothic New';
 	font-weight: 900;
-	margin:0px 0px 4px 0px;
-	
+	margin:70px 0px 10px 0px;
+	background-color:#C596EE;
+	padding:30px;
 }
 
 .mainimg{
-	box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.6);
-	margin:10px 0 20px 0;
+	margin:0px 0 15px 0;
 	width:100%;
 }
 
@@ -429,16 +475,24 @@ header:hover{
 }
 
 .link{
-	margin-top:5px;
-	color:#C596EE;
+	text-align:center;
+	margin-top:10px;
 	transition:all 0.2s;
-	display:block;
-	width:180px;
 }
 
+.link a{
+	padding:10px 10px 12px 10px;
+	display:block;
+	color:#fff;
+	background-color:#C596EE;
+	transition:all 0.2s;
+	display:inline-block;
+}
 
-.link:hover{
+.link a:hover{
 	transform:scale(1.02);
+	transition:all 0.2s;
+	background-color:#E0C8F6;
 }
 
 
@@ -479,6 +533,10 @@ header:hover{
 
 #umetalogo{
 	max-width:200px;
+}
+
+.shadow{
+	box-shadow: 0px 0px 6px  rgba(0, 0, 0, 0.3);
 }
 
 footer{
@@ -545,12 +603,20 @@ footer{
 		left:0px;
 	}
 	
+	.content-name{
+		font-size:20px;
+	}
+	
 	.work{
 		height:100px;
 	}
 	
 	.purple{
 		height:100px;
+	}
+	
+	.status{
+		font-size:12px;
 	}
 	
 	.work-name{

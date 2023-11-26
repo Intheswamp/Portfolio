@@ -80,10 +80,14 @@ $(function(){
 	
 	$(".work").on('mouseover', function(){
 		$(this).find(".work-name").addClass("inv");
+		$(this).find(".released").addClass("released-inv");
+		$(this).find(".study").addClass("study-inv");
 		$(this).find(".purple").addClass("exp");
 	});
 	$(".work").on('mouseout', function(){
 		$(this).find(".work-name").removeClass("inv");
+		$(this).find(".released").removeClass("released-inv");
+		$(this).find(".study").removeClass("study-inv");
 		$(this).find(".purple").removeClass("exp");
 	});
 	
