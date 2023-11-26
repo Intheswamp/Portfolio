@@ -381,14 +381,14 @@ header:hover{
 
 .released{
 	color:#fff;
-	padding:5px 7px 3px 5px;
+	padding:5px 5px 3px 5px;
 	background-color:#C596EE;
 }
 
 .study{
 	color:#C596EE;
 	background-color:#fff;
-	padding:3px 5px 1px 3px;
+	padding:3px 3px 1px 3px;
 	border:2px solid #C596EE;
 }
 
@@ -425,7 +425,6 @@ header:hover{
 .study-inv{
 	color:#FFF;
 	background-color:#C596EE;;
-	padding:3px 5px 1px 3px;
 	border:2px solid #fff;
 	transition:all 0.2s;
 }
